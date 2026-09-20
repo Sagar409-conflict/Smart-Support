@@ -1,5 +1,5 @@
+import "dotenv/config";
 import express from "express";
-
 const app = express();
 
 app.use(express.json());
@@ -14,5 +14,5 @@ app.get("/health", (_req, res) => {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(SmartSupport API running on port ${PORT});
+  console.log(`SmartSupport API running on port ${PORT}`);
 });
